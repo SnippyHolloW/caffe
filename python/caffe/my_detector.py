@@ -117,7 +117,7 @@ class MyDetector(caffe.Net):
         detections: list of {filename: image filename, window: crop coordinates,
             predictions: prediction vector} dicts.
         """
-        import selective_search_ijcv_with_python as selective_search
+        import selective_search
         # Make absolute paths so MATLAB can find the files.
         image_fnames = [os.path.abspath(f) for f in image_fnames]
         windows_list = selective_search.get_windows(
