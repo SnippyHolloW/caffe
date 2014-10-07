@@ -65,7 +65,7 @@ if __name__ == '__main__':
 
     # Check if model exists.
     if os.path.exists(model_filename) and model_checks_out():
-        print("Model already exists.")
+        print(("Model already exists at %s" % model_filename))
         sys.exit(0)
 
     # Download and verify model.
